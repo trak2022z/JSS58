@@ -1,11 +1,24 @@
-const clickTarget = document.getElementById("click-target");
+let button1 = document.getElementById("button1");
+button1.addEventListener("click",
+namedFunction); 
+button1.addEventListener("click",
+namedFunction); 
+button1.addEventListener("click",
+namedFunction); 
 
-function myEvent(e) {
-   var evtType = e.type
-   alert(evtType)
-   // displays click, or whatever the event type was
+function namedFunction() {
+  console.log("ouch you clicked me");
 }
 
-mouseOverTarget.addEventListener("mouseover", () => {
-  clickTarget.removeEventListener("click", makeBackgroundYellow, false);
+
+let button2 = document.getElementById("button2");
+
+button2.addEventListener("click", function() {
+  console.log("ouch you clicked me");
+});
+button2.addEventListener("click", function() {
+  console.log("ouch you clicked me");
+});
+button2.addEventListener("click", function() {
+  console.log("ouch you clicked me");
 });
